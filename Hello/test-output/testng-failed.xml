@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Berry]">
+  <listeners>
+    <listener class-name="Run.App"/>
+  </listeners>
+  <test thread-count="5" name="Apple(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="http://facebook.com"/>
+    <classes>
+      <class name="Run.Testdata">
+        <methods>
+          <include name="f" invocation-numbers="1 2"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Run.Testdata -->
+    </classes>
+  </test> <!-- Apple(failed) -->
+  <test thread-count="5" name="Peach(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://facebook.com"/>
+    <classes>
+      <class name="Run.Testdata">
+        <methods>
+          <include name="f" invocation-numbers="1 2"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Run.Testdata -->
+    </classes>
+  </test> <!-- Peach(failed) -->
+</suite> <!-- Failed suite [Berry] -->

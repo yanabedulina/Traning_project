@@ -1,0 +1,20 @@
+      System.setProperty("webdriver.chrome.driver", "/Users/yanabedulina/Desktop/chromedriver");
+	  driver = new ChromeDriver();
+	  
+	  System.setProperty("webdriver.gecko.driver", "/Users/yanabedulina/Desktop/geckodriver");
+	  driver = new FirefoxDriver();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
